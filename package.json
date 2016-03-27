@@ -1,0 +1,69 @@
+{
+  "name": "react-redux-starter-kit",
+  "version": "1.0.0",
+  "description": "This would be the starter kit for react projects.",
+  "main": "index.html",
+  "scripts": {
+    "start": "rm -rf build/ && rm -rf dist/ && webpack && webpack-dev-server --progress --colors",
+    "build": "rm -rf build/ && rm -rf dist/ && NODE_ENV=production webpack --config ./webpack.production.config.js --progress",
+    "test": "karma start",
+    "test:ci": "watch 'npm run test' src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://rahulshettyprdxn@bitbucket.org/rahulshettyprdxn/react-devops.git"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "react-native"
+  ],
+  "author": "Rahul Shetty",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/rahulshettyprdxn/react-devops#readme",
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-eslint": "^6.0.0",
+    "babel-loader": "^6.2.3",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-preset-es2015-without-strict": "0.0.2",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.5.1",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-react": "^4.1.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.14.0",
+    "image-webpack-loader": "^1.6.3",
+    "karma": "^0.13.22",
+    "karma-chai": "^0.1.0",
+    "karma-chai-plugins": "^0.7.0",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-cli": "^0.1.2",
+    "karma-mocha": "^0.2.2",
+    "karma-mocha-reporter": "^2.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.4.5",
+    "node-sass": "^3.4.2",
+    "react-transform-hmr": "^1.0.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "lodash": "^4.6.1",
+    "react": "^0.14.7",
+    "react-bootstrap": "^0.28.4",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.4.1",
+    "react-router": "^2.0.1",
+    "redux": "^3.3.1",
+    "redux-promise": "^0.5.1"
+  }
+}
