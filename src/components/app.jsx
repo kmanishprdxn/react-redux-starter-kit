@@ -1,6 +1,5 @@
 import React from 'react';
 import { Component } from 'react';
-import img from '../styles/10.png';
 
 export default class App extends Component {
   render() {
