@@ -26,6 +26,13 @@ module.exports = {
   },
 
   'module': {
+    'preLoaders': [
+      {
+        'test': [/\.js$/, /\.jsx$/],
+        'loaders': ['eslint'],
+        'exclude': /(node_modules|bower_components|build|dist)/,
+      }
+    ],
     'loaders': [
       // JSX and JS transpilation using babel
       {
